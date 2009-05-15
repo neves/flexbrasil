@@ -99,5 +99,16 @@
 			if (loop)
 				mc.gotoAndStop(labels[0].name)
 		}
+
+		/**
+		 * Iterage nos filhos do container, retornando um array com todos eles.
+		 */
+		public function get children():Array
+		{
+			var a:Array = []
+			for (var i = 0; i < mc.numChildren; i++)
+				a.push(mc.getChildAt(i))
+			return a
+		}
 	}
 }
