@@ -13,15 +13,15 @@
 	{
 		private var _alvo:DisplayObject;
 		private var _alvoTemp:DisplayObject;
-		private var _width:Number = 100;
-		private var _height:Number = 100;
+		private var _width:Number = 0;
+		private var _height:Number = 0;
 		/**
 		 * Menor valor permitido para horizontal, vertical, v e h
 		 */
 		public var limiteMenor:Number = 0;
 		public var limiteMaior:Number = 1;
 
-		public function Mascara()
+		public function Mascara(target = null)
 		{
 			// remove o simbolo dummy utilizado para feedback no palco do flash.
 			if (numChildren > 0)
@@ -33,6 +33,7 @@
 			redesenhar();
 			_alvoTemp = new Shape();
 			_alvo = _alvoTemp;
+			if (target) this.alvo = target;
 		}
 
 		public function set alvo(d:DisplayObject):void
@@ -42,8 +43,17 @@
 				if (_alvo) _alvo.mask = null;
 				d = _alvoTemp;
 			}
+			if (_width == 0)
+			{
+				_width = d.width
+				_height = d.height
+				x = d.x
+				y = d.y
+				redesenhar()
+			}
 			_alvo = d;
 			_alvo.mask = this;
+			if (_alvo.parent) _alvo.parent.addChild(this)
 		}
 
 		public function get alvo():DisplayObject
@@ -115,6 +125,41 @@
 		{
 			novo = Calc.entre(limiteMenor, novo, limiteMaior)
 			_alvo.y = y - novo * menorY
+		}
+
+		/**
+		 * Relação entre a largura da mascara e do seu conteudo.
+		 * 1 = São exatamente do mesmo tamanho.
+		 * < 1 = Conteudo é menor do que a mascara.
+		 * > 1 = Conteudo é maior do que a mascara.
+		 */
+		public function get rh():Number
+		{
+			return _alvo.width / width
+		}
+
+		/**
+		 * Mesmo acima, mas para a altura
+		 */
+		public function get ry():Number
+		{
+			return _alvo.height / height
+		}
+
+		/**
+		 * Precisa de scroll horizontal
+		 */
+		public function get needScrollH():Boolean
+		{
+			return _alvo.width > width
+		}
+
+		/**
+		 * Precisa de scroll vertical
+		 */
+		public function get needScrollV():Boolean
+		{
+			return _alvo.height > height
 		}
 
 		public function get vertical():Number

@@ -42,7 +42,7 @@
 		{
 			var diferenca = destino - origem
 			diferenca /= fator
-			return snap(origem + diferenca)
+			return snap(origem + diferenca, 0.0001)
 		}
 
 		/**

@@ -23,7 +23,7 @@ package flexbrasil.flash
 			var ref:Class = getDefinitionByName(klass) as Class
 			instance = new ref()
 			instance.dummy = this
-			removeMe()
+			//removeMe()
 		}
 
 		/**
