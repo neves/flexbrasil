@@ -263,9 +263,13 @@
 		public function set cor(color:Number)
 		{
 			var c:ColorTransform = new ColorTransform()
-			if (color)
-				c.color = color
+			c.color = color
 			mc.transform.colorTransform = c
+		}
+		
+		public function get cor():Number
+		{
+			return mc.transform.colorTransform.color
 		}
 
 		public function get bitmapData():BitmapData
