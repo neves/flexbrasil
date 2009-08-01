@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="vertical" backgroundColor="white" xmlns:local="*">
+	<mx:Label text="Digite Aqui:" width="50%" />
+	<mx:TextInput id="src" text="aeiou" width="50%" />
+	<mx:Text width="50%">
+		<mx:text>
+			Este campo tem maxChars="1", mas não respeita se o texto for atribuído direto para a propriedade text, 
+			respeita apenas se o valor for digitado ou colado:
+		</mx:text>
+	</mx:Text>
+	<mx:TextInput maxChars="3" text="{src.text}" width="50%" />
+
+	<mx:Text width="50%">
+		<mx:text>
+			A solução abaixo foi criar um componente que extende o TextInput e sobrescreve o método text, 
+			passando a respeitar o maxChars. 
+		</mx:text>
+	</mx:Text>
+
+	<local:MaxCharsTextInput text="{src.text}" maxChars="3" width="50%" />
+
+</mx:Application>

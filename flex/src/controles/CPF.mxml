@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controles:MaxCharsTextInput xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:controles="controles.*"
+	restrict="0-9.\-" maxChars="14" text="{value}">
+	<mx:String id="value">{text}</mx:String>
+</controles:MaxCharsTextInput>

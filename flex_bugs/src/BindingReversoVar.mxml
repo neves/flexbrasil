@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:FormItem xmlns:mx="http://www.adobe.com/2006/mxml" label="Var">
+<mx:Script>
+	<![CDATA[
+		[Bindable]
+		public var value:String = "";
+	]]>
+</mx:Script>
+	<mx:TextInput id="input" text="{value}" />
+	<mx:Binding source="input.text" destination="value" />
+</mx:FormItem>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:FormItem xmlns:mx="http://www.adobe.com/2006/mxml" label="String">
+	<mx:String id="value">{input.text}</mx:String>
+	<mx:TextInput id="input" text="{value}" />
+</mx:FormItem>

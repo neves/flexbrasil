@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="horizontal" xmlns:local="*" width="1024" height="768">
+	<mx:TabNavigator width="100%" height="100%">
+		<local:controles />
+	</mx:TabNavigator>
+</mx:Application>

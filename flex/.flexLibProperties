@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="controles.CEP"/>
+<classEntry path="controles.CPF"/>
+<classEntry path="formItems.CEP"/>
+<classEntry path="formItems.CPF"/>
+<classEntry path="formItems.Sexo"/>
+</includeClasses>
+<includeResources/>
+<namespaceManifests/>
+</flexLibProperties>
