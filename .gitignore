@@ -1,3 +1,5 @@
 .DS_Store
 bin-debug
 flex/bin/flex.swc
+com/adobe
+libs/

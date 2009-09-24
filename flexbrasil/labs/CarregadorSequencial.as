@@ -10,6 +10,7 @@
 	public class CarregadorSequencial extends Array
 	{
 		private var current:Img = null
+
 		public function load(e = null)
 		{
 			if (current)

@@ -1,4 +1,10 @@
-﻿package flexbrasil
+﻿/**
+ * import flexbrasil.*
+ * ou
+ * import flexbrasil.f
+ * para chamar, utilizar apenas f(...)
+ */
+package flexbrasil
 {
 	import flash.events.*;
 

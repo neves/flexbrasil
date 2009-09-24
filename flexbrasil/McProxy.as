@@ -14,7 +14,7 @@
 		{
 			this.mc = mc
 		}
-		
+
 		public function set init(callback:Function):void
 		{
 			if (mc.stage == null)
