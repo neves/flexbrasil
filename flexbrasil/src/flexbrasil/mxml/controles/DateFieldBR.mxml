@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:DateField xmlns:mx="http://www.adobe.com/2006/mxml"
+			  initialize="init()"
+			  editable="true" restrict="0-9/" width="100"
+			  formatString="DD/MM/YYYY" yearNavigationEnabled="true">
+	<mx:Script>
+		<![CDATA[
+			private function init():void
+			{
+				textInput.maxChars = formatString.length;
+			}
+		]]>
+	</mx:Script>
+	<mx:monthNames>
+		<mx:Array>
+			<mx:String>janeiro</mx:String>
+			<mx:String>fevereiro</mx:String>
+			<mx:String>março</mx:String>
+			<mx:String>abril</mx:String>							
+			<mx:String>maio</mx:String>
+			<mx:String>junho</mx:String>
+			<mx:String>julho</mx:String>
+			<mx:String>agosto</mx:String>
+			<mx:String>setembro</mx:String>
+			<mx:String>outubro</mx:String>
+			<mx:String>novembro</mx:String>
+			<mx:String>dezembro</mx:String>
+		</mx:Array>
+	</mx:monthNames>
+	<mx:dayNames>
+		<mx:Array>
+			<mx:String>dom</mx:String>
+			<mx:String>seg</mx:String>
+			<mx:String>ter</mx:String>
+			<mx:String>qua</mx:String>
+			<mx:String>qui</mx:String>							
+			<mx:String>sex</mx:String>
+			<mx:String>sab</mx:String>
+		</mx:Array>
+	</mx:dayNames>
+</mx:DateField>

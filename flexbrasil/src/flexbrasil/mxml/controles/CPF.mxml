@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controls:MaskedTextInput xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:controles="flexbrasil.mxml.controles.*"
+	xmlns:controls="com.adobe.flex.extras.controls.*"
+	text="{value}" inputMask="###/.###/.###-##">
+	<mx:String id="value">{text}</mx:String>
+</controls:MaskedTextInput>

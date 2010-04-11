@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controles:Combo dataProvider="{SIGLAS}" arrowButtonWidth="10" width="50"
+			 rowCount="{SIGLAS.length / 2}" xmlns:controles="flexbrasil.mxml.controles.*"
+			 xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script>
+		<![CDATA[
+			public const SIGLAS:Array = [ 
+				'AC', 'AL', 'AM', 'AP',
+				'BA', 'CE', 'DF', 'ES',
+				'GO', 'MA', 'MG', 'MS',
+				'MT', 'PA', 'PB', 'PE',
+				'PI', 'PR', 'RJ', 'RN',
+				'RO', 'RR', 'RS', 'SC',
+				'SE', 'SP', 'TO'];
+		]]>
+	</mx:Script>
+</controles:Combo>

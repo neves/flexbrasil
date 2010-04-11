@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>flexbrasil_explorer</name>
+	<name>flexbrasil</name>
 	<comment></comment>
 	<projects>
-		<project>flexbrasil</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -13,14 +12,7 @@
 		</buildCommand>
 	</buildSpec>
 	<natures>
-		<nature>com.adobe.flexbuilder.project.flexnature</nature>
+		<nature>com.adobe.flexbuilder.project.flexlibnature</nature>
 		<nature>com.adobe.flexbuilder.project.actionscriptnature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>[source path] lib</name>
-			<type>2</type>
-			<location>D:/github.com/flexbrasil/lib</location>
-		</link>
-	</linkedResources>
 </projectDescription>

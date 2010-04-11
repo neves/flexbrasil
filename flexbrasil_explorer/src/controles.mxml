@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" width="100%" height="100%" xmlns:formItems="formItems.*">
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" 
+		 xmlns:formItems="flexbrasil.mxml.formItems.*" 
+		 xmlns:controles="flexbrasil.mxml.controles.*"
+		 width="100%" height="100%">
 	<mx:Form>
 		<formItems:CEP id="cep" value="87030-1301" /><mx:Label text="{cep.value}" />
 		<formItems:Sexo id="sexo" value="F" />
 		<formItems:CPF id="cpf" value="012.345.678-901" />
+		<mx:TextInput id="uf" />
+		<controles:Combo dataProvider="['PR', 'SP']" selectedValue="{uf.text}" />
 	</mx:Form>
 </mx:HBox>

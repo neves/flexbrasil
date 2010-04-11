@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controles:MaxCharsTextInput xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:controles="flexbrasil.mxml.controles.*"
+	maxChars="9" restrict="0-9\-" width="95" text="{value}">
+	<!--
+	<mx:Script>
+		<![CDATA[
+			import flexbrasil.formatters.CepFormatter;
+			public override function set text(t:String):void
+			{
+				super.text = CepFormatter.format(t);
+			}
+		]]>
+	</mx:Script>
+	-->
+	<mx:String id="value">{text}</mx:String>
+</controles:MaxCharsTextInput>

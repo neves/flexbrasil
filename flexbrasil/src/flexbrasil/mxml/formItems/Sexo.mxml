@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:FormItem label="Sexo" horizontalGap="10" direction="horizontal" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:RadioButtonGroup id="sexo" selectedValue="{value}" />
+	<mx:RadioButton value="M" 
+		horizontalGap="0" textSelectedColor="Blue" textRollOverColor="Blue"
+		color="Blue" label="M" groupName="sexo" />
+	<mx:RadioButton value="F"
+		horizontalGap="0" textSelectedColor="Fuchsia" textRollOverColor="Fuchsia"
+		color="Fuchsia" label="F" groupName="sexo" />
+	<mx:Script>
+		<![CDATA[
+			[Bindable]
+			[Inspectable(enumeration="M,F")]
+			public var value:String;
+		]]>
+	</mx:Script>
+	<mx:Binding source="sexo.selectedValue.toString()" destination="value" />
+</mx:FormItem>

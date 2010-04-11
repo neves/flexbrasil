@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		  xmlns:mx="library://ns.adobe.com/flex/mx"
+		  xmlns:controles="flexbrasil.mxml.controles.*" 
+		  xmlns:s="library://ns.adobe.com/flex/spark">
+	<fx:Script>
+		<![CDATA[
+			
+			import mx.events.ItemClickEvent;
+			
+			private function update(e:ItemClickEvent):void
+			{
+				var estados:XML = <estados>
+							<uf value="PR" label="Paraná" />
+							<uf value="SP" label="São Paulo" />
+						</estados>;
+				switch(e.label)
+				{
+					case "null":
+						combo.labelField = null;
+						combo.valueField = null;
+						combo.dataProvider = null;
+						break;
+					case "array":
+						combo.labelField = "label";
+						combo.valueField = "value";
+						combo.dataProvider = [
+							{value:"PR", label:"Paraná"},
+							{value:"SP", label:"São Paulo"}
+						]
+						break;
+					case "xml":
+						combo.labelField = "@label";
+						combo.valueField = "@value";
+						combo.dataProvider = estados.uf;
+						break;
+					case "string":
+						combo.labelField = null;
+						combo.valueField = null;
+						combo.dataProvider = ["PR", "SP"];
+						break;
+					case "numbers":
+						combo.labelField = null;
+						combo.valueField = null;
+						combo.dataProvider = [4, 8, 15, 16, 23, 42];
+						break;
+				}
+			}
+		]]>
+	</fx:Script>
+	<mx:Form>
+		<mx:FormHeading label="Preencher ComboBox com:" />
+		<mx:ToggleButtonBar id="tbb" itemClick="update(event)">
+			<mx:dataProvider>
+				<fx:Array>
+					<fx:String>null</fx:String>
+					<fx:String>array</fx:String>
+					<fx:String>xml</fx:String>
+					<fx:String>string</fx:String>
+					<fx:String>numbers</fx:String>
+				</fx:Array>
+			</mx:dataProvider>
+		</mx:ToggleButtonBar>
+	
+		<mx:FormItem label="selectedIndex" direction="horizontal">
+			<s:NumericStepper id="ns" value="{combo.selectedIndex}" minimum="-1" maximum="{combo.dataProvider.length - 1}" />
+			<mx:FormItem label="ComboBox">
+				<controles:Combo id="combo"
+								 prompt="Estado" 
+								 valueField="{valueField.text}"
+								 selectedIndex="{ns.value}" 
+								 selectedValue="{newValue.text}"
+								 labelField="{labelField.text}" />
+			</mx:FormItem>
+		</mx:FormItem>
+		
+		<mx:FormItem label="labelField">
+			<s:TextInput id="labelField" text="{combo.labelField}" />
+		</mx:FormItem>
+		
+		<mx:FormItem label="selectedItem">
+			<s:TextInput text="{combo.selectedItem}" />
+		</mx:FormItem>
+		
+		<mx:FormItem label="valueField">
+			<s:TextInput id="valueField" text="{combo.valueField}" />
+		</mx:FormItem>
+
+		<mx:FormItem label="selectedValue" direction="horizontal">
+			<s:TextInput id="newValue"  />
+			<s:Label text="{combo.selectedValue.toString()}" verticalAlign="middle" height="100%" />
+		</mx:FormItem>
+
+	</mx:Form>
+</s:VGroup>

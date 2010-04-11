@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:FormItem xmlns:mx="http://www.adobe.com/2006/mxml" width="100%" label="CPF" xmlns:controles="flexbrasil.mxml.controles.*">
+<mx:Script>
+	<![CDATA[
+		import mx.binding.utils.BindingUtils;
+		private function init():void
+		{
+			BindingUtils.bindProperty(this, "value", input, "value");
+		}
+	]]>
+</mx:Script>
+	<mx:String id="value"></mx:String>
+	<controles:CPF id="input" value="{value}" />
+</mx:FormItem>

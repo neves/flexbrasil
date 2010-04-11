@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controles:Combo xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:controles="flexbrasil.mxml.controles.*">
+	<controles:dataProvider>
+			<mx:Array>
+				<mx:Object value="S" label="solteiro" />
+				<mx:Object value="C" label="casado" />
+				<mx:Object value="D" label="divorciado" />
+				<mx:Object value="V" label="viúvo" />				
+			</mx:Array>
+	</controles:dataProvider>
+</controles:Combo>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="false" version="3">
+  <includeClasses>
+    <classEntry path="flexbrasil.mxml.controles.CEP"/>
+    <classEntry path="flexbrasil.mxml.controles.CPF"/>
+    <classEntry path="flexbrasil.mxml.controles.Combo"/>
+    <classEntry path="flexbrasil.mxml.controles.DateFieldBR"/>
+    <classEntry path="flexbrasil.mxml.controles.EstadoCivil"/>
+    <classEntry path="flexbrasil.mxml.controles.MaxCharsTextInput"/>
+    <classEntry path="flexbrasil.mxml.controles.UF"/>
+    <classEntry path="flexbrasil.mxml.formItems.CEP"/>
+    <classEntry path="flexbrasil.mxml.formItems.CPF"/>
+    <classEntry path="flexbrasil.mxml.formItems.Sexo"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

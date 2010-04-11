@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controls:MaskedTextInput xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:controls="com.adobe.flex.extras.controls.*">
+	<mx:Script>
+		<![CDATA[
+			override public function set text(value:String):void
+			{
+				super.text = maxChars > 0 ? value.toString().substr(0, maxChars) : value;
+			}
+		]]>
+	</mx:Script>
+</controls:MaskedTextInput>
