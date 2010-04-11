@@ -3,7 +3,7 @@
 			   xmlns:s="library://ns.adobe.com/flex/spark" 
 			   xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:local="*">
 	<s:layout>
-		<s:HorizontalLayout/>
+		<s:HorizontalLayout paddingBottom="8" paddingLeft="8" paddingRight="8" paddingTop="8" />
 	</s:layout>
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
