@@ -74,14 +74,14 @@
 			</mx:FormItem>
 		</mx:FormItem>
 		
+		<mx:FormItem label="selectedItem">
+			<s:Label text="{combo.selectedItem}" />
+		</mx:FormItem>
+				
 		<mx:FormItem label="labelField">
 			<s:TextInput id="labelField" text="{combo.labelField}" />
 		</mx:FormItem>
-		
-		<mx:FormItem label="selectedItem">
-			<s:TextInput text="{combo.selectedItem}" />
-		</mx:FormItem>
-		
+
 		<mx:FormItem label="valueField">
 			<s:TextInput id="valueField" text="{combo.valueField}" />
 		</mx:FormItem>

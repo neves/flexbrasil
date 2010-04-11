@@ -1,7 +1,6 @@
 package flexbrasil.mxml.controles
 {
 	import flash.events.Event;
-	import flash.utils.getQualifiedClassName;
 	
 	import mx.collections.IViewCursor;
 	import mx.controls.ComboBox;
@@ -14,12 +13,19 @@ package flexbrasil.mxml.controles
 	public class Combo extends ComboBox
 	{
 		/**
-		 * mesmo funcionamento do labelField
+		 * mesmo funcionamento do labelField,
+		 * o nome foi escolhido para manter o padrão de nomenclatura.
 		 */
 		protected var _valueField:String = null;
 
 		/**
-		 * Por padrão, o valueField utiliza o mesmo valor do labelField
+		 * Mantém uma cópia do valor selecionado, para poder atualizar ao alterar o valueField
+		 */
+		protected var _selectedValue:Object = null;
+
+		/**
+		 * Por padrão, o valueField utiliza o mesmo valor do labelField,
+		 * o nome foi escolhido para manter o padrão de nomenclatura.
 		 */
 		[Bindable(event="valueCommit")] // preciso disparar valueCommit no set, para forçar atualização
 		public function get valueField():String
@@ -31,9 +37,16 @@ package flexbrasil.mxml.controles
 		{
 			if (name == _valueField) return; 
 			_valueField = name;
+			//selectedValue = _selectedValue; // deixar comentado para fazer valueField se comportar como labelField,
+											  // ou seja, ao alterar valueField, o selectedIndex não será alterado. 
 			dispatchEvent(new FlexEvent("valueCommit"));
 		}
 
+		/**
+		 * o nome foi escolhido para manter o padrão de nomenclatura:
+		 * selectedItem, selectedIndex e selectedValue.
+		 * não sei porque, mas precisa ser valueCommit para o bind disparar ao alterar selectedIndex ou valueField.
+		 */
 		[Bindable(event="valueCommit")]
 		public function get selectedValue():Object
 		{
@@ -42,6 +55,7 @@ package flexbrasil.mxml.controles
 
 		public function set selectedValue(newValue:Object):void
 		{
+			_selectedValue = newValue;
 			setSelectedItem(newValue)
 		}
 
