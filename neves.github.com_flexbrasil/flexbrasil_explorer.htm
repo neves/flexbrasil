@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>FlexBrasil Explorer</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="jquery.swfobject.1-0-9.js"></script>
+	<script>
+		jQuery(function($) {
+			$('a.[rel=flash]').each(function() {
+				var flash = $.flash.create({
+					swf:this.href,
+					width:"100%",
+					height:"100%"
+				})
+				$(this).replaceWith(flash)
+			})
+		})
+	</script>
+	<style>
+		html, body { margin: 0; padding: 0; border: none; height: 100% }
+		object {display: block}
+	</style>
+</head>
+<body>
+	<a rel="flash" href="http://github.com/neves/flexbrasil/raw/master/flexbrasil_explorer/bin-release/FlexbrasilExplorer.swf"></a>
+</body>
+</html>
