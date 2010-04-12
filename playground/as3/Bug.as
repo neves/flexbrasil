@@ -1,4 +1,4 @@
-﻿package as3
+package as3
 {
 	import flash.display.*
 	import flash.text.*
