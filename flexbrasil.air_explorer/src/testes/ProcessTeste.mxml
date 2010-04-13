@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		  xmlns:s="library://ns.adobe.com/flex/spark" 
+		  xmlns:mx="library://ns.adobe.com/flex/mx" 
+		  xmlns:nativeProcessUtil="flexbrasil.air.nativeProcessUtil.*"
+		  width="100%" height="100%" paddingBottom="8" paddingLeft="8" paddingRight="8" paddingTop="8">
+	<fx:Script>
+		<![CDATA[
+			private function run():void
+			{
+				try {
+					process.start();
+				}catch(e:Error){
+					error.text = e.message;
+				}
+			}
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<nativeProcessUtil:Process id="process" input="{input.text}" cmd="{cmd.text}" workingDir="{workingDir.text}" 
+								   defaultArgs="{defaultArgs.text.split(/\s+/)}"
+								   args="{args.text.split(/\s+/)}" />
+	</fx:Declarations>
+	<s:HGroup width="100%">
+		<mx:Form width="100%" paddingTop="0">
+			<mx:FormItem label="workingDir:" width="100%">
+				<s:TextInput id="workingDir" width="100%" text="D:/" />	
+			</mx:FormItem>
+			<mx:FormItem label="cmd" width="100%" direction="horizontal">
+				<s:TextInput id="cmd" width="100%" text="C:\WINDOWS\system32\tasklist.exe" />
+				<s:Label text="{process.name}" />
+			</mx:FormItem>
+		</mx:Form>
+
+		<mx:Form width="100%" paddingTop="0">
+			<mx:FormItem label="defaultArgs:" width="100%">
+				<s:TextInput id="defaultArgs" width="100%" />
+			</mx:FormItem>
+			<mx:FormItem label="args:" width="100%">
+				<s:TextInput id="args" width="100%" />
+			</mx:FormItem>
+		</mx:Form>
+
+		<s:VGroup>
+			<s:Button label="executar" click="run()" enabled="{!process.running}" />
+			<s:Button label="parar" click="process.exit()" enabled="{process.running}" />
+			<s:Label text="exitCode: {process.exitCode}" height="100%" verticalAlign="middle" width="90" />
+		</s:VGroup>
+	</s:HGroup>
+
+	<s:Label text="input:" fontWeight="bold" />
+	<s:TextArea id="input" width="100%" height="100%" enabled="{!process.running}" />
+
+	<s:Label text="output:" fontWeight="bold" />
+	<s:TextArea id="output" text="{process.output}" width="100%" height="100%" editable="false" />
+
+	<s:Label text="error:" fontWeight="bold" />
+	<s:TextArea id="error" text="{process.error}" width="100%" height="100%" editable="false" color="red" />
+	
+</s:VGroup>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" version="3">
+  <includeClasses>
+    <classEntry path="flexbrasil.air.nativeProcessUtil.Process"/>
+    <classEntry path="flexbrasil.air.nativeProcessUtil.Service"/>
+    <classEntry path="flexbrasil.air.nativeProcessUtil.services.Apache"/>
+    <classEntry path="flexbrasil.air.nativeProcessUtil.services.MySql"/>
+    <classEntry path="flexbrasil.air.nativeProcessUtil.Monitor"/>
+    <classEntry path="flexbrasil.air.nativeProcessUtil.Assassin"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Panel xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		  xmlns:s="library://ns.adobe.com/flex/spark" 
+		  xmlns:mx="library://ns.adobe.com/flex/mx" 
+		  xmlns:nativeProcessUtil="flexbrasil.air.nativeProcessUtil.*"
+		  title="{service.name}" width="100%" height="100%">
+	<fx:Declarations>
+		<nativeProcessUtil:Monitor id="monitor" name="{service.name}" enabled="true" />
+		<nativeProcessUtil:Assassin id="assassin" name="{service.name}" />
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import flexbrasil.air.nativeProcessUtil.Service;
+			[Bindable]public var service:Service; 
+		]]>
+	</fx:Script>
+	<s:layout>
+		<s:HorizontalLayout paddingBottom="8" paddingLeft="8" paddingRight="8" paddingTop="8" horizontalAlign="center" />
+	</s:layout>
+
+	<s:VGroup>
+		<s:Button label="start" click="service.start()" enabled="{!service.running}" />
+		<s:Button label="stop" click="service.exit()" enabled="{service.running}" />
+		<s:Button label="restart" click="service.restart()" enabled="{service.running}" />
+		<s:Button label="kill" click="assassin.kill()" enabled="{monitor.running}" />
+		<s:Label text="{monitor.running ? 'running' : 'stopped' }"
+				 color="{monitor.running ? 0x00FF00 : 0xFF0000}" textAlign="center" width="100%" />
+	</s:VGroup>
+
+	<s:VGroup width="100%" height="100%">
+		<s:Label text="output" />
+		<s:TextArea width="100%" height="100%" text="{service.output}" />
+		<s:Label text="error" />
+		<s:TextArea width="100%" height="100%" text="{service.error}" />
+	</s:VGroup>
+</s:Panel>
