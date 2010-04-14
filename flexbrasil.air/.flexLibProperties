@@ -7,6 +7,9 @@
     <classEntry path="flexbrasil.air.nativeProcessUtil.services.MySql"/>
     <classEntry path="flexbrasil.air.nativeProcessUtil.Monitor"/>
     <classEntry path="flexbrasil.air.nativeProcessUtil.Assassin"/>
+    <classEntry path="flexbrasil.air.menu.Menu"/>
+    <classEntry path="flexbrasil.air.menu.Item"/>
+    <classEntry path="flexbrasil.air.menu.Separator"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

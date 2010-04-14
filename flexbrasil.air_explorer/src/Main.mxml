@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
-					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:s="library://ns.adobe.com/flex/spark"
 					   xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:testes="testes.*"
-					   width="1024" height="768">
+					   width="1024" height="768" xmlns:menu="flexbrasil.air.menu.*">
 	<s:layout>
 		<s:VerticalLayout paddingBottom="8" paddingLeft="8" paddingRight="8" paddingTop="8" />
 	</s:layout>
-	<mx:TabNavigator width="100%" height="100%">
+	
+	<s:creationComplete>
+		<![CDATA[
+			nativeWindow.menu = mainMenu;
+		]]>
+	</s:creationComplete>
+
+	<fx:Declarations>
+		<menu:Menu id="mainMenu" select="status = event.target.name">
+			<menu:Item label="File" name="file">
+				<menu:Item label="New" name="new" keyEquivalent="n" />
+				<menu:Item label="Edit" name="edit" keyEquivalent="e" checked="true" />
+				<menu:Separator />
+				<menu:Item label="Toggle" name="toggle" select="event.target.checked = !event.target.checked" />
+				<menu:Item label="Exit" name="exit" select="nativeApplication.exit()" />
+			</menu:Item>
+			<menu:Separator />
+			<menu:Item label="{tab.selectedChild.label}" name="tab" />
+			<menu:Item label="About" name="about" />
+		</menu:Menu>
+	</fx:Declarations>
+
+	<mx:TabNavigator id="tab" width="100%" height="100%">
 		<s:NavigatorContent label="Services">
 			<testes:ServicesTeste />
 		</s:NavigatorContent>
