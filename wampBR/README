@@ -1,0 +1,9 @@
+FEATURES
+
+	Portable - Basta descompactar em qualquer pasta e iniciar os serviços.
+	Leve - Possui apenas os arquivos necessários, instalação tem menos de 10MB e instalado menos de 20MB
+	Construtor customizado - você pode escolher o que vai querer, deixando ainda mais leve
+	Email Local - Todo email enviado pela função mail, vai direto para a pasta tmp/php_sendmail/
+	Apache index customizado
+	Configurador gráfico do php.ini
+	ferramentas opcionais: heidiSQL, notepad++, colorpic, firefox + firebug + webdeveloper + resizeWindow

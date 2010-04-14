@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   visible="false"
+					   creationComplete="init()" xmlns:menu="flexbrasil.air.menu.*" 
+					   xmlns:nativeProcessUtil="flexbrasil.air.nativeProcessUtil.*" 
+					   xmlns:local="*" 
+					   xmlns:mxml="flexbrasil.mxml.*" xmlns:util="util.*">
+	<fx:Script>
+		<![CDATA[
+			private function init():void
+			{
+				if (!NativeApplication.supportsSystemTrayIcon) return;
+				var sysTray:SystemTrayIcon = NativeApplication.nativeApplication.icon as SystemTrayIcon;
+				iconChooser.sysTray = sysTray;
+				sysTray.tooltip = "WampBR";
+				sysTray.menu = trayMenu;
+				try {
+					startAtLoginMenu.checked = nativeApplication.startAtLogin;
+				}catch(e:Error){}
+			}
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<util:IconChooser id="iconChooser" apache="{apache.running}" mysql="{mysql.running}" />
+
+		<menu:Menu id="trayMenu">
+			<menu:Item label="start apache" name="apache_start" 
+					   select="apache.start()" 
+					   enabled="{!apache.running}" />
+
+			<menu:Item label="stop apache" name="apache_stop" 
+					   select="apache.exit()" 
+					   enabled="{apache.running}" />
+
+			<menu:Item label="restart apache" name="apache_restart" 
+					   select="apache.restart()" 
+					   enabled="{apache.running}" />
+
+			<menu:Separator  />
+
+			<menu:Item label="start mysql" name="mysql_start" 
+					   select="mysql.start()" 
+					   enabled="{!mysql.running}" />
+
+			<menu:Item label="stop mysql" name="mysql_stop" 
+					   select="mysql.exit()" 
+					   enabled="{mysql.running}" />
+
+			<menu:Item label="restart mysql" name="mysql_restart" 
+					   select="mysql.restart()" 
+					   enabled="{mysql.running}" />
+
+			<menu:Separator  />
+
+			<menu:Item label="start all" name="all_start" 
+					   select="apache.start(); mysql.start()" 
+					   enabled="{!(apache.running || mysql.running)}" />
+
+			<menu:Item label="stop all" name="all_stop" 
+					   select="apache.exit(); mysql.exit()" 
+					   enabled="{apache.running || mysql.running}" />
+
+			<menu:Item label="restart all" name="all_restart" 
+					   select="apache.restart(); mysql.restart()" 
+					   enabled="{apache.running || mysql.running}" />
+
+			<menu:Separator  />
+			
+			<menu:Item label="iniciar com windows" toggle="true" id="startAtLoginMenu" 
+					   select="{nativeApplication.startAtLogin = event.target.checked}" />
+
+			<menu:Item label="sobre" name="sobre" />
+
+			<menu:Item label="sair" name="sair" select="nativeApplication.exit()" />
+		</menu:Menu>
+
+		<nativeProcessUtil:Service id="apache" cmd="D:/wampBR/server/apache/httpd.exe" workingDir="D:/wampBR" forceKill="true" />
+
+		<nativeProcessUtil:Service id="mysql" cmd="D:/wampBR/server/mysql/bin/mysqld.exe" workingDir="D:/wampBR">
+			<nativeProcessUtil:args>
+				<!-- defaults-file precisa ser definido sempre em primeiro -->
+				<fx:String>--defaults-file=server/mysql/my.ini</fx:String>
+				<fx:String>--console</fx:String>
+				<fx:String>--basedir=server/mysql</fx:String>
+				<fx:String>--innodb-file-per-table</fx:String>
+				<fx:String>--innodb=off</fx:String>
+				<fx:String>--datadir=./dbdir</fx:String>
+				<fx:String>--language=portuguese</fx:String>
+			</nativeProcessUtil:args>
+		</nativeProcessUtil:Service>
+
+	</fx:Declarations>
+
+</s:WindowedApplication>

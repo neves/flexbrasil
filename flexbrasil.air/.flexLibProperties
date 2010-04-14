@@ -3,7 +3,6 @@
   <includeClasses>
     <classEntry path="flexbrasil.air.nativeProcessUtil.Process"/>
     <classEntry path="flexbrasil.air.nativeProcessUtil.Service"/>
-    <classEntry path="flexbrasil.air.nativeProcessUtil.services.Apache"/>
     <classEntry path="flexbrasil.air.nativeProcessUtil.services.MySql"/>
     <classEntry path="flexbrasil.air.nativeProcessUtil.Monitor"/>
     <classEntry path="flexbrasil.air.nativeProcessUtil.Assassin"/>

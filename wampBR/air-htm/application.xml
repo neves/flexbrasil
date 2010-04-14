@@ -1,0 +1,31 @@
+<?xml version ="1.0" encoding="utf-8" ?>
+<application xmlns="http://ns.adobe.com/air/application/2.0beta2">
+	<id>wampBR</id>
+	<version>0.0.1</version>
+	<filename>wampBR</filename>
+	<description>Start/Stop Apache/MySql</description>
+	<name>wampBR</name>
+	<copyright>(c) 2010 WampBR.</copyright>
+	<initialWindow>
+		<content>index.html</content>
+		<systemChrome>standard</systemChrome>
+		<transparent>false</transparent>
+		<visible>false</visible>
+		<width>600</width>
+		<height>200</height>
+		<fullScreen>false</fullScreen>
+		<aspectRatio>portrait</aspectRatio>
+		<maximizable>false</maximizable>
+		<minimizable>false</minimizable>
+		<resizable>false</resizable>
+	</initialWindow>
+	<customUpdateUI>false</customUpdateUI>
+	<allowBrowserInvocation>true</allowBrowserInvocation>
+	<supportedProfiles>extendedDesktop</supportedProfiles>
+	<icon>
+		<image16x16>icones/apache_mysql_16x16.png</image16x16>
+		<image32x32>icones/apache_mysql_32x32.png</image32x32>
+		<image48x48>icones/apache_mysql_48x48.png</image48x48>
+		<image128x128>icones/apache_mysql_128x128.png</image128x128>
+	</icon>
+</application>

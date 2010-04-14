@@ -3,21 +3,22 @@
 		  xmlns:s="library://ns.adobe.com/flex/spark" 
 		  xmlns:mx="library://ns.adobe.com/flex/mx" 
 		  xmlns:testes="testes.*"
-		  xmlns:services="flexbrasil.air.nativeProcessUtil.services.*"
 		  width="100%" height="100%"
-		  paddingBottom="8" paddingLeft="8" paddingRight="8" paddingTop="8">
+		  paddingBottom="8" paddingLeft="8" paddingRight="8" paddingTop="8" xmlns:nativeProcessUtil="flexbrasil.air.nativeProcessUtil.*">
 	<fx:Declarations>
-		<services:Apache id="apache" cmd="D:/wampBR/server/apache/httpd.exe" workingDir="D:/wampBR" forceKill="true" />
+		<nativeProcessUtil:Service id="apache" cmd="D:/wampBR/server/apache/httpd.exe" workingDir="D:/wampBR" forceKill="true" />
 
-		<services:MySql id="mysql" cmd="D:/wampBR/server/mysql/bin/mysqld.exe" workingDir="D:/wampBR">
-			<services:args>
+		<nativeProcessUtil:Service id="mysql" cmd="D:/wampBR/server/mysql/bin/mysqld.exe" workingDir="D:/wampBR">
+			<nativeProcessUtil:args>
+				<fx:String>--defaults-file=server/mysql/my.ini</fx:String>
+				<fx:String>--console</fx:String>
 				<fx:String>--basedir=server/mysql</fx:String>
 				<fx:String>--innodb-file-per-table</fx:String>
 				<fx:String>--innodb=off</fx:String>
 				<fx:String>--datadir=./dbdir</fx:String>
 				<fx:String>--language=portuguese</fx:String>
-			</services:args>
-		</services:MySql>
+			</nativeProcessUtil:args>
+		</nativeProcessUtil:Service>
 	</fx:Declarations>
 
 	<testes:ServiceControl service="{apache}" />
