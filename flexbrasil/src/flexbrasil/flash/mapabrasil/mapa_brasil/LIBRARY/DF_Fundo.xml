@@ -1,0 +1,32 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="DF_Fundo" itemID="46b761ef-000000d1" sourceLibraryItemHRef="Symbol 1" lastModified="1186428557">
+  <timeline>
+    <DOMTimeline name="DF_Fundo">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!321 110|360 205!360 205|0 199!0 199/4 0!4 0|293 0!293 0|337 41!337 41|321 110"/>
+                    <Edge cubics="!360 205(;360,205 0,199 0,199q360 205 0 199);"/>
+                    <Edge cubics="!293 0(;293,0 337,41 337,41q293 0 337 41);"/>
+                    <Edge cubics="!337 41(;337,41 321,110 321,110q337 41 321 110);"/>
+                    <Edge cubics="!321 110(;321,110 360,205 360,205q321 110 360 205);"/>
+                    <Edge cubics="!4 0(;4,0 293,0 293,0q4 0 293 0);"/>
+                    <Edge cubics="!0 199(;0,199 4,0 4,0q0 199p4 0);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

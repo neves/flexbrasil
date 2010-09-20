@@ -1,0 +1,88 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="CE" itemID="46b726bd-00000043" linkageExportForAS="true" linkageBaseClass="UF" linkageClassName="CE" sourceLibraryItemHRef="Symbol 1" lastModified="1186427807" lastUniqueIdentifier="4">
+  <timeline>
+    <DOMTimeline name="CE">
+      <layers>
+        <DOMLayer name="centro" color="#FFFF4F" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="centro" name="centro" selected="true">
+                  <matrix>
+                    <Matrix tx="24" ty="32"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="borda" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.05" solidStyle="hairline">
+                        <fill>
+                          <SolidColor color="#CCCCCC"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!986 659[903 873 751 952!751 952[771 987 755 1005!755 1005|721 1146!721 1146|755 1257!755 1257|702 1342!702 1342[684 1328 612 1389!612 1389[534 1202 183 1234!183 1234[230 1144 233 1060!233 1060[209 1005 155 985!155 985[132 819 78 757
+!78 757[44 550 80 377!80 377[13 242 0 99!0 99[63 69 68 5!68 5[241 -8 393 18!393 18[811 269 1023 526!1023 526[1089 538 1132 578!1132 578|986 659"/>
+                    <Edge cubics="!751 952(;764,975 766,993 755,1005q751 952Q771 987q755 1005);"/>
+                    <Edge cubics="!0 99(;9,194 35,287 80,377q0 99Q13 242q80 377);"/>
+                    <Edge cubics="!68 5(;65,48 42,79 0,99q68 5Q63 69q0 99);"/>
+                    <Edge cubics="!155 985(;191,998 217,1023 233,1060q155 985Q209 1005q233 1060);"/>
+                    <Edge cubics="!986 659(;931,802 852,899 751,952q986 659Q903 873q751 952);"/>
+                    <Edge cubics="!721 1146(;721,1146 755,1257 755,1257q721 1146 755 1257);"/>
+                    <Edge cubics="!755 1005(;755,1005 721,1146 721,1146q755 1005 721 1146);"/>
+                    <Edge cubics="!755 1257(;755,1257 702,1342 702,1342q755 1257 702 1342);"/>
+                    <Edge cubics="!1132 578(;1103,551 1067,534 1023,526q1132 578Q1089 538q1023 526);"/>
+                    <Edge cubics="!233 1060(;231,1116 214,1174 183,1234q233 1060Q230 1144q183 1234);"/>
+                    <Edge cubics="!393 18(;292,1 183,-4 68,5q393 18Q241 -8q68 5);"/>
+                    <Edge cubics="!78 757(;114,798 140,874 155,985q78 757Q132 819q155 985);"/>
+                    <Edge cubics="!183 1234(;417,1213 560,1264 612,1389q183 1234Q534 1202q612 1389);"/>
+                    <Edge cubics="!80 377(;56,492 55,619 78,757q80 377Q44 550q78 757);"/>
+                    <Edge cubics="!1023 526(;882,355 672,185 393,18q1023 526Q811 269q393 18);"/>
+                    <Edge cubics="!612 1389(;660,1348 690,1333 702,1342q612 1389Q684 1328q702 1342);"/>
+                    <Edge cubics="!1132 578(;1132,578 986,659 986,659q1132 578 986 659);"/>
+                  </edges>
+                </DOMShape>
+                <DOMSymbolInstance libraryItemName="CE_Borda" name="borda">
+                  <matrix>
+                    <Matrix ty="0.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="28.3" y="34.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="fundo" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="CE_Fundo" name="fundo">
+                  <matrix>
+                    <Matrix ty="0.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="28.3" y="34.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

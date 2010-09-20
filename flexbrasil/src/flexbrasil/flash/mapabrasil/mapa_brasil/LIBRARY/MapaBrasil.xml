@@ -1,0 +1,232 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="MapaBrasil" itemID="4c48f102-00000522" linkageExportForAS="true" linkageClassName="MapaBrasil" sourceLibraryItemHRef="Symbol 1" lastModified="1279848706" lastUniqueIdentifier="33">
+  <timeline>
+    <DOMTimeline name="MapaBrasil">
+      <layers>
+        <DOMLayer name="estados" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="AM" name="am" centerPoint3DX="120.8" centerPoint3DY="123.5">
+                  <matrix>
+                    <Matrix tx="2" ty="39.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="118.8" y="83.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="AC" name="ac" centerPoint3DX="51.55" centerPoint3DY="202.1">
+                  <matrix>
+                    <Matrix tx="-0.05" ty="175.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="51.55" y="26.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="RS" name="rs" centerPoint3DX="277.9" centerPoint3DY="485.9">
+                  <matrix>
+                    <Matrix tx="229.65" ty="440.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="48.25" y="45.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="SC" name="sc" centerPoint3DX="308.75" centerPoint3DY="448.65">
+                  <matrix>
+                    <Matrix tx="275" ty="425.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="33.75" y="23.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="PR" name="pr" centerPoint3DX="306.95" centerPoint3DY="405.95">
+                  <matrix>
+                    <Matrix tx="265.35" ty="377.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="41.6" y="28"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="MG" name="mg" centerPoint3DX="386" centerPoint3DY="325.75">
+                  <matrix>
+                    <Matrix tx="311.85" ty="267.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="74.15" y="58.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="MS" name="ms" centerPoint3DX="265.9" centerPoint3DY="351.7">
+                  <matrix>
+                    <Matrix tx="218.75" ty="304.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.15" y="47.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="MT" name="mt" centerPoint3DX="247.9" centerPoint3DY="244.25">
+                  <matrix>
+                    <Matrix tx="171.4" ty="169.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="76.5" y="74.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="RO" name="ro" centerPoint3DX="145.45" centerPoint3DY="218.7">
+                  <matrix>
+                    <Matrix tx="97.1" ty="179.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="48.35" y="39.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="RR" name="rr" centerPoint3DX="163.95" centerPoint3DY="44.25">
+                  <matrix>
+                    <Matrix tx="122.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="41.2" y="44.25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="PA" name="pa" centerPoint3DX="293.75" centerPoint3DY="119.35">
+                  <matrix>
+                    <Matrix tx="204.3" ty="35.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="89.45" y="84"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="MA" name="ma" centerPoint3DX="395.75" centerPoint3DY="148.55">
+                  <matrix>
+                    <Matrix tx="349.35" ty="86"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="46.4" y="62.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="TO" name="to" centerPoint3DX="351.35" centerPoint3DY="201">
+                  <matrix>
+                    <Matrix tx="317.4" ty="139.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="33.95" y="61.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="PI" name="pi" centerPoint3DX="420.25" centerPoint3DY="165.05">
+                  <matrix>
+                    <Matrix tx="381.6" ty="110.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="38.65" y="54.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="PE" name="pe" centerPoint3DX="495.9" centerPoint3DY="189.3">
+                  <matrix>
+                    <Matrix tx="446.85" ty="174.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="44.2" y="15.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="SE" name="se" centerPoint3DX="499.65" centerPoint3DY="220.6">
+                  <matrix>
+                    <Matrix tx="486.25" ty="205.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="13.15" y="14.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="BA" name="ba" centerPoint3DX="435.7" centerPoint3DY="258.8">
+                  <matrix>
+                    <Matrix tx="374.2" ty="191.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="61.5" y="67.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="GO" name="go" centerPoint3DX="332.25" centerPoint3DY="290.35">
+                  <matrix>
+                    <Matrix tx="283.6" ty="245.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="48.65" y="44.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="CE" name="ce" centerPoint3DX="475.6" centerPoint3DY="147.4">
+                  <matrix>
+                    <Matrix tx="447.3" ty="112.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="28.3" y="34.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="RN" name="rn" centerPoint3DX="509.45" centerPoint3DY="153.8">
+                  <matrix>
+                    <Matrix tx="484.85" ty="141.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="24.6" y="15.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="SP" name="sp" centerPoint3DX="342.3" centerPoint3DY="378.65">
+                  <matrix>
+                    <Matrix tx="285.6" ty="340.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="56.7" y="37.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="RJ" name="rj" centerPoint3DX="416" centerPoint3DY="375.75">
+                  <matrix>
+                    <Matrix tx="390.05" ty="358.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="25.95" y="17.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="ES" name="es" centerPoint3DX="446.5" centerPoint3DY="343.1">
+                  <matrix>
+                    <Matrix tx="429.25" ty="320.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="15.95" y="23.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="AP" name="ap" centerPoint3DX="296.2" centerPoint3DY="47.65">
+                  <matrix>
+                    <Matrix tx="262.6" ty="10.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="33.6" y="37"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="PB" name="pb" centerPoint3DX="514.8" centerPoint3DY="173.65">
+                  <matrix>
+                    <Matrix tx="482.4" ty="158.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="26.45" y="15.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="AL" name="al" centerPoint3DX="510.2" centerPoint3DY="209.45">
+                  <matrix>
+                    <Matrix tx="487.3" ty="197.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="21.6" y="11.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="DF" name="df" centerPoint3DX="352.75" centerPoint3DY="285.9">
+                  <matrix>
+                    <Matrix tx="344.75" ty="281.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.35" y="4.25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
